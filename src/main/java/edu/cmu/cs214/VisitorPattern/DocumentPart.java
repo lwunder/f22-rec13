@@ -6,17 +6,19 @@ package edu.cmu.cs214.VisitorPattern;
  */
 public interface DocumentPart {
 
-    /**
-     * transform this document to HTML format.
-     *
-     * @return the string of document
-     */
-    String toHTML();
+    String accept(Visitor visitor);
 
-    /**
-     * transform this document to MarkDown format.
-     *
-     * @return the string of document
-     */
-    String toMarkDown();
+    // /**
+    //  * transform this document to HTML format.
+    //  *
+    //  * @return the string of document
+    //  */
+    // String toHTML();
+
+    // /**
+    //  * transform this document to MarkDown format.
+    //  *
+    //  * @return the string of document
+    //  */
+    // String toMarkDown();
 }
